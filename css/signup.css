@@ -1,0 +1,55 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.Signup{
+    background-color: #160E0B;
+}
+
+.signup-container {
+    margin: auto;
+    justify-content: center;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); /* هذا هو تأثير الظل */
+}
+.signup-container h2 {
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.signup-container .form-group {
+    margin-bottom: 15px;
+}
+.signup-container .btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+}
+.signup-container .btn:hover {
+    background-color: #0056b3;
+}
+.signup-container .text-muted {
+    margin-top: 15px;
+    text-align: center;
+}
+.signup-container .text-muted a {
+    color: #007bff;
+    text-decoration: none;
+}
+.signup-container .text-muted a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 576px) {
+    .signup-container {
+        padding: 20px;
+    }
+}

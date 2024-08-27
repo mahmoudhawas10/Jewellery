@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/animate.css">
+    <title>Jewellery</title>
+    <style>
+    .nav-item a{
+    font-size: 18px;
+    color: white !important;
+}
+.nav-item a:hover{
+    color: #dc3545 !important;
+}
+header {
+    height: 100vh;
+    background: url('img/bg.jpg') center center/cover no-repeat;
+}
+.navbar{
+    background-color: transparent !important;
+}
+.main{
+  width: 30%;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header  slideInLeft" data-wow-duration="3s"  data-wow-iteration="2">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light pt-4 ">
+        <div class="container">
+            <a class="navbar-brand text-white fw-bold" href="#">Healet</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active px-3 fw-bold" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active px-3 fw-bold" aria-current="page" href="#About">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active px-3 fw-bold" aria-current="page" href="#SHOP">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active px-3 fw-bold" aria-current="page" href="#BLOG">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active px-3 fw-bold" aria-current="page" href="#CONTACT">Contact</a>
+                  </li>
+                </ul>
+                <div class="d-flex gap-2">
+                    <button onclick="navigateTo('signup.html')" class="btn btn-outline-danger" type="button">Sign Up</button>
+                    <button onclick="navigateTo('login.html')" class="btn btn-outline-danger" type="button">Log In</button>
+                    <button class="btn btn-outline-light" id="change">Change Mode</button>
+                  </div>
+            </div>
+        </div>
+    </nav>
+    </div>
+    <div class="main">
+        <div class="caption">
+            <h1 id="text" class="text-white pe-4"></h1>
+            <p class="lead text-white-50">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem</p>
+            <a href="#"><button class="btn btn-outline-danger px-5 mt-3">Shop now</button></a>
+        </div>
+    </div>
+</header>
+
+
+<div id="About" class="about-section mt-5">
+  <div class="container">
+      <div class="row align-items-center">
+          <div class="col-md-6 about-img">
+              <img src="img/about-img.jpg" alt="About Us Image">
+          </div>
+          <div class="col-md-6 about-content">
+              <h2 class="fw-bold">About Us</h2>
+              <p class="py-1 text-black-50">
+                  Jewelry is a personal ornament, such as a ring, bracelet, necklace or any other item made from jewels, precious metals, or any other material. The word jewelry is derived from the Latin word ‘Jocale’ meaning plaything. In the present scenario, the word Jewelry is used to describe any piece of precious metal or gemstone used to adorn oneself. Jewelry has fascinated, thrilled, and impressed the world for thousands of years and played an important role in the growth of human civilization. Jewelry is one of the oldest forms of body adornment and was in use before clothing came into existence.
+              </p>
+              <a href="#"><button class="btn btn-outline-danger px-5 mt-3">Read More</button></a>
+          </div>
+      </div>
+  </div>
+</div>
+<div id="SHOP">
+  <div class="text-shop text-center pt-4">
+<h3 class="fw-bold" id="text2"></h3>
+  </div>
+  <div class="container mt-4">
+      <div class="row">
+          
+        
+          <div class="col-sm-6 col-md-4 col-lg-3 pt-2 pb-2">
+              <div class="box">
+                <div class="img-box"><img src="img/Necklace.png"></div>
+                <div class="detail-box pt-2">
+                  <h6 class="fw-bold">Necklace</h6>
+                  <h6>Price<span class="spancolor ps-2">$110</span></h6>
+                </div>
+                <div class="position-relative">
+                  <div class="badge"><span>New</span></div>
+                </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 pt-2 pb-2">
+              <div class="box">
+                <div class="img-box"><img src="img/Necklace2.png"></div>
+                <div class="detail-box pt-2">
+                  <h6 class="fw-bold">Necklace</h6>
+                  <h6>Price<span class="spancolor ps-2">$70</span></h6>
+                </div>
+                <div class="position-relative">
+                  <div class="badge"><span>New</span></div>
+                </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 pt-2 pb-2">
+              <div class="box">
+                <div class="img-box"><img src="img/Necklace3.png"></div>
+                <div class="detail-box pt-2">
+                  <h6 class="fw-bold">Necklace</h6>
+                  <h6>Price<span class="spancolor ps-2">$310</span></h6>
+                </div>
+                <div class="position-relative">
+                  <div class="badge"><span>New</span></div>
+                </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 pt-2 pb-2">
+              <div class="box">
+                <div class="img-box"><img src="img/Necklace4.png"></div>
+                <div class="detail-box pt-2">
+                  <h6 class="fw-bold">Ring</h6>
+                  <h6>Price<span class="spancolor ps-2">$130</span></h6>
+                </div>
+                <div class="position-relative">
+                  <div class="badge"><span>New</span></div>
+                </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 pt-2 pb-2">
+              <div class="box">
+                <div class="img-box"><img src="img/Necklace5.png"></div>
+                <div class="detail-box pt-2">
+                  <h6 class="fw-bold">Ring</h6>
+                  <h6>Price<span class="spancolor ps-2">$90</span></h6>
+                </div>
+                <div class="position-relative">
+                  <div class="badge"><span>New</span></div>
+                </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 pt-2 pb-2">
+              <div class="box">
+                <div class="img-box"><img src="img/Necklace6.png"></div>
+                <div class="detail-box pt-2">
+                  <h6 class="fw-bold">Earrings</h6>
+                  <h6>Price<span class="spancolor ps-2">$210</span></h6>
+                </div>
+                <div class="position-relative">
+                  <div class="badge"><span>New</span></div>
+                </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 pt-2 pb-2">
+              <div class="box">
+                <div class="img-box"><img src="img/Necklace7.png"></div>
+                <div class="detail-box pt-2">
+                  <h6 class="fw-bold">Earrings</h6>
+                  <h6>Price<span class="spancolor ps-2">$180</span></h6>
+                </div>
+                <div class="position-relative">
+                  <div class="badge"><span>New</span></div>
+                </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 pt-2 pb-2">
+              <div class="box">
+                <div class="img-box"><img src="img/Necklace8.png"></div>
+                <div class="detail-box pt-2">
+                  <h6 class="fw-bold">Necklace</h6>
+                  <h6>Price<span class="spancolor ps-2">$50</span></h6>
+                </div>
+                <div class="position-relative">
+                  <div class="badge"><span>New</span></div>
+                </div>
+                </div>
+            </div>
+      </div>
+      
+<div class="d-flex justify-content-center my-2">
+  <a href="product.html" target="_blank"><button class="btn btn-outline-danger px-5 mt-3">View all products </button></a>
+</div>
+  </div>
+
+</div>
+<div  class="offers mt-5">
+  <div class="text-offer text-center pt-4 pb-3">
+    <h3 class="fw-bold text-white" id="text3"></h3>
+      </div>
+  <div class="container">
+    <div class="row mb-3">
+      <div class="col-md-7 wow slideInLeft" data-wow-duration="2s" data-wow-iteration="3">
+        <div class="image-container">
+          <img class="mt-1" src="img/offer1.jpg" alt="Jewelry">
+
+            <div class="overlay">
+                <h2 class="pt-2 pb-2">Upto 15% Off</h2>
+                <a  href="#">Shop Now</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-5">
+      <div class="image-container mb-2" >
+          <img src="img/offer2.jpg" alt="Jewelry">
+          <div class="overlay">
+              <h2 class="pt-2 pb-2">Upto 10% Off</h2>
+              <a href="#">Shop Now</a>
+          </div>
+      </div>
+      <div class="image-container">
+          <img src="img/offer3.jpg" alt="Jewelry">
+          <div class="overlay">
+              <h2 class="pt-2 pb-2">Upto 20% Off</h2>
+              <a href="#">Shop Now</a>
+          </div>
+      </div>
+  </div>
+
+    </div>
+  </div>
+</div>
+<div id="BLOG" class="blog mt-5">
+  <div class="text-offer text-center pt-4 pb-3">
+    <h3 class="fw-bold " id="text4"></h3>
+      </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card card-custom">
+            <div class="position-relative">
+                <img src="img/blog1.jpg" class="card-img-top" alt="Bride Image">
+                <div class="card-img-overlay">
+                    <div>23</div>
+                    <div>Auguest</div>
+                </div>
+            </div>
+            <div class="card-body card-body-custom">
+                <h5 class="card-title card-title-custom">Molestiae ad reiciendis dignissimos</h5>
+                <p class="card-text card-text-custom">
+                    Alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+                </p>
+                <button class="btn btn-danger">read more</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card card-custom">
+          <div class="position-relative">
+              <img src="img/blog2.jpg" class="card-img-top" alt="Bride Image">
+              <div class="card-img-overlay">
+                  <div>23</div>
+                  <div>Auguest</div>
+              </div>
+          </div>
+          <div class="card-body card-body-custom">
+              <h5 class="card-title card-title-custom">Molestiae ad reiciendis dignissimos</h5>
+              <p class="card-text card-text-custom">
+                  Alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+              </p>
+              <button class="btn btn-danger">read more</button>
+          </div>
+      </div>
+  </div>
+    </div>
+  </div>
+</div>
+<section>
+  <div class=" text-center mt-5 ">
+    <h1 class="ml6">
+      <span class="text-wrapper">
+        <span class="letters">Best Sellers</span>
+      </span>
+    </h1>
+  </div>
+  <div class="bestseller mt-3">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="img/best1.jpg" alt="Image 1"></div>
+          <div class="swiper-slide"><img src="img/best2.jpg" alt="Image 2"></div>
+          <div class="swiper-slide"><img src="img/best3.jpg" alt="Image 3"></div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev "></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-scrollbar "></div>
+  </div>
+  </div>
+</section>
+
+
+<div class="Testimonial mt-5 wow slideInLeft" data-wow-duration="2s">
+  <div class="carousel-container ">
+    <div class="testimonial active">
+        <img src="img/blog2.jpg" alt="User 1">
+        <h3>Samantha Jonas</h3>
+        <p>It is a long established fact that a reader will be distracted by the readable content.</p>
+    </div>
+    <div class="testimonial">
+        <img src="img/client.jpg" alt="User 2">
+        <h3>Michael Lee</h3>
+        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+    </div>
+
+    <div class="controls gap-4">
+        <button class="control-btn" id="prevBtn">&#10094;</button>
+        <button class="control-btn" id="nextBtn">&#10095;</button>
+    </div>
+</div>
+</div>
+
+<div id="CONTACT" class="contact mt-5">
+  <div class="container mt-5">
+    <div class="row">
+        <div class="col-12 text-center mb-4">
+            <div class="row mt-5">
+                <div class="col-md-3 contact-info ">
+                  <a href="location.html" target="_blank"> <i class="fas fa-map-marker-alt"></i></a>
+                    <p>mitghamer-mansoura-egypt</p>
+                </div>
+                <div class="col-md-3 contact-info">
+                  <a href=""><i class="fas fa-phone"></i></a>
+                    <p>+01225303500</p>
+                </div>
+                <div class="col-md-3 contact-info">
+                  <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><i class="fas fa-envelope"></i></a>
+                    <p>mahmoudhawas777@gmail.com</p>
+                </div>
+                <div class="col-md-3 contact-info">
+<a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <p>facebook.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h4 class="fw-bold text-white">Contact Us</h4>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name" class="text-white">Full Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <label for="email"class="text-white">Email Address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label for="subject" class="text-white">Subject</label>
+                    <input type="text" class="form-control" id="subject" placeholder="Subject">
+                </div>
+                <div class="form-group">
+                    <label for="message" class="text-white">Message</label>
+                    <textarea class="form-control" id="message" rows="5" placeholder="Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100 mb-2">Send Message</button>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <div class="contact-image" style="background-image: url('img/offer1.jpg'); height: 100%;"></div>
+        </div>
+    </div>
+</div>
+</div>
+<footer class="footer mt-3">
+  <div class="container">
+      <div class="row">
+          <!-- Subscribe -->
+          <div class="col-md-6 mb-4">
+              <div class="subscribe-form">
+                  <input type="email" placeholder="Enter your email">
+                  <button type="submit"><i class="fas fa-paper-plane"></i></button>
+              </div>
+          </div>
+          <div class="col-md-6 mb-4 text-right">
+              <div class="social-icons">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+          <!-- Menu -->
+          <div class="col-md-3 footer-widget">
+              <h4 class="text-white fw-bold">Menu</h4>
+              <ul class="list-unstyled">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#About">About</a></li>
+                  <li><a href="#SHOP">Shop</a></li>
+                  <li><a href="#BLOG">Blog</a></li>
+              </ul>
+          </div>
+          <!-- Instagram -->
+          <div class="col-md-3 footer-widget">
+              <h4  class="text-white fw-bold">Instagram</h4>
+              <div>
+                  <img src="img/Necklace.png" class="instagram-img" alt="Instagram Image">
+                  <p>Long established fact that a reader...</p>
+              </div>
+              <div>
+                  <img src="img/Necklace2.png" class="instagram-img" alt="Instagram Image">
+                  <p>Long established fact that a reader...</p>
+              </div>
+          </div>
+          <!-- About Us -->
+          <div class="col-md-3 footer-widget">
+              <h4  class="text-white fw-bold">About Us</h4>
+              <p>When looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to...</p>
+          </div>
+          <!-- Contact Us -->
+          <div class="col-md-3 footer-widget">
+              <h4  class="text-white fw-bold">Contact Us</h4>
+              <p><i class="fas fa-map-marker-alt"></i> Location</p>
+              <p><i class="fas fa-phone"></i> Call +01 225303500</p>
+              <p><i class="fas fa-envelope"></i> mail@hawas.com</p>
+          </div>
+      </div>
+  </div>
+  <div class="row">
+    <div class="col-12 copyright text-center text-white fw-bold">
+        <p>&copy; 2024 <a href="" class="text-danger">mahmoud hawas</a>. All rights reserved.</p>
+    </div>
+</div>
+</footer>
+    <script src="main.js"></script>
+    <script src="Testimonial.js"></script>
+    <script src="css/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="swipper.js"></script>
+
+    <script src="wow.min.js"></script>
+   <script>
+       new WOW().init();
+   </script>
+  </body>
+</html>

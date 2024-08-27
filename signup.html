@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <title>Sign Up</title>
+</head>
+<body>
+    <div class="Signup  wow slideInLeft" data-wow-duration="2s">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light pt-4">
+            <div class="container">
+              <a class="navbar-brand text-white fw-bold" href="#">Healet</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active px-4" aria-current="page" href="index.html">Home</a>
+                  </li>
+                </ul>
+                <form class="d-flex gap-2">
+                  <button onclick="switchLanguage()" class="btn btn-outline-info" type="button">Switch lang</button>
+                  <!-- هنا تم تعديل الزر ليعمل على استدعاء دالة JavaScript لنقلك إلى صفحة تسجيل الدخول -->
+                  <button onclick="gotologin()" class="btn btn-outline-info" type="button">Log In</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="signup-container mt-3">
+            <h2 id="signupTitle">Sign Up</h2>
+            <form id="signupForm" onsubmit="return validateForm()">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm your password" required>
+                </div>
+                <button type="submit" class="btn btn-primary" id="signupButton">Sign Up</button>
+                <p class="text-muted mt-3">Already have an account? <a href="#" onclick="gotologin()">Sign In</a></p>
+            </form>
+        </div>
+        <script>
+            function switchLanguage() {
+                const elements = {
+                    title: document.querySelector('#signupTitle'),
+                    labels: document.querySelectorAll('label'),
+                    placeholders: {
+                        name: document.querySelector('#name'),
+                        email: document.querySelector('#email'),
+                        password: document.querySelector('#password'),
+                        confirmPassword: document.querySelector('#confirmPassword')
+                    },
+                    button: document.querySelector('#signupButton'),
+                    links: document.querySelectorAll('.text-muted a')
+                };
+
+                if (elements.title.innerText === 'Sign Up') {
+                    elements.title.innerText = 'اشتراك';
+                    elements.labels[0].innerText = 'اسم';
+                    elements.labels[1].innerText = 'عنوان البريد الإلكتروني';
+                    elements.labels[2].innerText = 'كلمه السر';
+                    elements.labels[3].innerText = 'تأكيد كلمة المرور';
+                    elements.placeholders.name.placeholder = 'أدخل اسمك';
+                    elements.placeholders.email.placeholder = 'أدخل بريدك الإلكتروني';
+                    elements.placeholders.password.placeholder = 'أدخل كلمة المرور';
+                    elements.placeholders.confirmPassword.placeholder = 'أكد كلمة المرور';
+                    elements.button.innerText = 'اشتراك';
+                    elements.links[0].innerText = 'تسجيل الدخول';
+                } else {
+                    elements.title.innerText = 'Sign Up';
+                    elements.labels[0].innerText = 'Name';
+                    elements.labels[1].innerText = 'Email address';
+                    elements.labels[2].innerText = 'Password';
+                    elements.labels[3].innerText = 'Confirm Password';
+                    elements.placeholders.name.placeholder = 'Enter your name';
+                    elements.placeholders.email.placeholder = 'Enter your email';
+                    elements.placeholders.password.placeholder = 'Enter your password';
+                    elements.placeholders.confirmPassword.placeholder = 'Confirm your password';
+                    elements.button.innerText = 'Sign Up';
+                    elements.links[0].innerText = 'Sign In';
+                }
+            }
+
+            function gotologin() {
+                window.location.href = "login.html";
+            }
+        </script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="wow.min.js"></script>
+   <script>
+       new WOW().init();
+   </script>
+</body>
+</html>

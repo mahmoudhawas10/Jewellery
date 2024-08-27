@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Mansoura Map</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body{
+            background-color: #1a1a1a;
+        }
+        .map-container {
+            height: 400px;
+            position: relative;
+        }
+
+        .map-responsive {
+            overflow: hidden;
+            padding-bottom: 56.25%;
+            position: relative;
+            height: 0;
+        }
+
+        .map-responsive iframe {
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="row">
+        <!-- Contact Info -->
+        <div class="col-12 text-center mb-4">
+            <h2 class="text-white">Contact Us - Mansoura Location</h2>
+            <p class="text-white">Find us at our location in Mansoura, Egypt.</p>
+        </div>
+        <!-- Map -->
+        <div class="col-12 map-container">
+            <div class="map-responsive">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3457.5744346989283!2d31.349791475199665!3d31.036861828825464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f79dba0dfba5a9%3A0x292f0f5e1c7b8c5b!2sMansoura%2C%20Dakahlia%20Governorate%2C%20Egypt!5e0!3m2!1sen!2sus!4v1692972000000!5m2!1sen!2sus" 
+                    allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body.change {
+            background-color: black;
+            color: white;
+        }
+        #About p.change {
+            color: #e40707 !important; /* Custom red color */
+        }
+    </style>
+</head>
+<body>
+    <button class="btn btn-outline-light" id="change">Change Mode</button>
+    <p>dsgfdg</p>
+    <div id="About" class="about-section mt-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 about-img">
+                    <img src="img/about-img.jpg" alt="About Us Image">
+                </div>
+                <div class="col-md-6 about-content">
+                    <h2 class="fw-bold">About Us</h2>
+                    <p class="py-1 text-black-50">
+                        Jewelry is a personal ornament, such as a ring, bracelet, necklace or any other item made from jewels, precious metals, or any other material. The word jewelry is derived from the Latin word ‘Jocale’ meaning plaything. In the present scenario, the word Jewelry is used to describe any piece of precious metal or gemstone used to adorn oneself. Jewelry has fascinated, thrilled, and impressed the world for thousands of years and played an important role in the growth of human civilization. Jewelry is one of the oldest forms of body adornment and was in use before clothing came into existence.
+                    </p>
+                    <a href="#"><button class="btn btn-outline-danger px-5 mt-3">Read More</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let change = document.getElementById("change");
+        let body = document.body;
+        let aboutParagraph = document.querySelector("#About p");
+
+        change.addEventListener("click", (e) => {
+            body.classList.toggle("change");
+            aboutParagraph.classList.toggle("change");
+        });
+    </script>
+</body>
+</html>
